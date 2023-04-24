@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Singapoure</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="s2.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="wb1.html">Home</a></li>
+                    <li><a href="wb2.html">About</a></li>
+                    <li><a href="wb4.html">Form</a></li>
+                    <li><a href="wb3.html">Login</a></li>
+                </ul>
+            </nav>
+            <img src="logo.jpg" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="form-box">
+            <h1 class="hh1">Login Here</h1>
+            <div class="input-box">
+                <input type="email" placeholder="Email" id="savedtxt">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="savedtxt">
+            </div>
+            <button type="button" class="login-btn" onclick="save">LOGIN</button>
+        </div>
+        
+
+    </div>
+        <script>
+            var menuList=document.getElementById("menuList");
+            menuList.style.maxHeight="0px";
+            function togglemenu(){
+            if (menuList.style.maxHeight=="0px"){
+                menuList.style.maxHeight="130px";
+            }
+            else{
+                menuList.style.maxHeight="0px";
+            }
+            }
+
+        </script>
+</body>
+</html>
+

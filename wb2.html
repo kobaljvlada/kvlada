@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Singapoure</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="s2.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="wb1.html">Home</a></li>
+                    <li><a href="wb2.html">About</a></li>
+                    <li><a href="wb4.html">Form</a></li>
+                    <li><a href="wb3.html">Login</a></li>
+                </ul>
+            </nav>
+            <img src="logo.jpg" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row1">
+            <ul>
+                <img src="s2.png" alt="flag" style="float: right; margin-right: 40% ">
+                <li class="li1">Népessége:</li>
+                <p>5,454 millió</p>
+                <li class="li1">Hivatalos nyelvek:</li>
+                <p>angol, mandarin, maláj, tamil</p>
+                <li class="li1">Vezetők:</li>
+                <p>Elnök: Halimah Yacob <br> Miniszterelnök: Li Hszien Lung</p>
+                <li class="li1">Domborzat:</li>
+                <p>Szingapúr az azonos nevű szigeten terül el, ezen kívül még kb. 60 kisebb sziget (Jurong, Tekong, Ubin stb.) alkotja. A kis területű ország legnagyobb része síkság, és csak pár szigethegy emelkedik ki felszínén. Ezek közül a legmagasabb a Bukit Timah nevű domb 163,63 méterrel a tenger szintje felett. A sekély parti sáv feltöltésével a sziget területét folyamatosan növelik, így például 1960-ban Szingapúr területe még csak 581,5 km² volt, szemben a mai 716,1 km²-rel.</p>
+                <li class="li1">Éghajlat:</li>
+                <p>Szingapúr az egyenlítői éghajlaton fekszik, ahol az évi 2400 mm csapadék az átlagos. A statisztikák szerint mindössze két fok átlagos eltérést tapasztalhatunk a januári és a júliusi középhőmérséklet között. Az esős évszak novembertől januárig tart, amikor főként az európai turistáknak nehéz megküzdeniük a magas páratartalommal.</p>
+            </ul>
+        </div>
+    </div>
+        <script>
+            var menuList=document.getElementById("menuList");
+            menuList.style.maxHeight="0px";
+            function togglemenu(){
+            if (menuList.style.maxHeight=="0px"){
+                menuList.style.maxHeight="130px";
+            }
+            else{
+                menuList.style.maxHeight="0px";
+            }
+            }
+        </script>
+</body>
+</html>
+
